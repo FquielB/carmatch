@@ -61,7 +61,7 @@ export default function QuestionSection({ submit }) {
             </div>
             <div className="check-with-image">
               <Image src="./icons/diesel.png" width={75} height={75} />
-              <Checkbox value={"DIESEL"}>Diesel</Checkbox>
+              <Checkbox value={"DIESEL"}>Diesel </Checkbox>
             </div>
 
             {/*             <Checkbox value={"Electric"}>Eléctrico</Checkbox>
