@@ -12,8 +12,12 @@ export default function CarsSection({ cars = [] }) {
         {cars.map((car, index) => (
           <List.Item className="item" key={index}>
             <Image src={car.Imagen} width={240} height={120} />
-            <p style={{ width: "100px" }}>{car.Vehiculo}</p>
+            <p style={{ width: "130px" }}>
+              <b>Modelo: </b>
+              {car.Vehiculo}
+            </p>
             <Button
+              className="button-data-link"
               type="primary"
               onClick={(e) => {
                 e.preventDefault();
@@ -23,6 +27,7 @@ export default function CarsSection({ cars = [] }) {
               Quiero saber más!
             </Button>
             <Button
+              className="button-data-link"
               type="primary"
               onClick={(e) => {
                 e.preventDefault();
@@ -32,6 +37,7 @@ export default function CarsSection({ cars = [] }) {
               Quiero ver financiación por Crédito!
             </Button>
             <Button
+              className="button-data-link"
               type="primary"
               onClick={(e) => {
                 e.preventDefault();

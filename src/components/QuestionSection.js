@@ -63,9 +63,6 @@ export default function QuestionSection({ submit }) {
               <Image src="./icons/diesel.png" width={75} height={75} />
               <Checkbox value={"DIESEL"}>Diesel </Checkbox>
             </div>
-
-            {/*             <Checkbox value={"Electric"}>Eléctrico</Checkbox>
-            <Checkbox value={"Hybrid"}>Híbrido</Checkbox> */}
           </Checkbox.Group>
         </Form.Item>
         <Form.Item
