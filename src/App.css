@@ -1,4 +1,5 @@
-.app > .card {
+.app > .card,
+.app > .car-section > .card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +8,7 @@
 }
 
 .app {
-  background-color: rgb(242, 242, 242);
+  background-color: #243782;
   padding: 1px;
 }
 
@@ -15,6 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h2 {
+  color: white;
 }
 
 .check-with-image {
@@ -52,4 +57,20 @@
 
 .ant-card-body {
   flex: 1;
+}
+
+.link-to-form-button {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.button-data-link {
+  margin: 10px 0 0 0;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus,
+.ant-btn-primary {
+  background-color: #43aaa0;
+  border-color: #006e6a;
 }
