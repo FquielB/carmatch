@@ -59,10 +59,8 @@ function App() {
       <Button
         type="primary"
         className="link-to-form-button"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = URL_FORM;
-        }}
+        href={URL_FORM}
+        target="_blank"
       >
         <b>Antes de irte, déjanos tu comentario!</b>
       </Button>

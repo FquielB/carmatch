@@ -2,10 +2,6 @@ import React from "react";
 import { List, Card, Image, Button } from "antd";
 
 export default function CarsSection({ cars = [] }) {
-  const goTo = (link) => {
-    window.location.href = link;
-  };
-
   return (
     <Card className="card">
       <List className="list">
@@ -19,30 +15,24 @@ export default function CarsSection({ cars = [] }) {
             <Button
               className="button-data-link"
               type="primary"
-              onClick={(e) => {
-                e.preventDefault();
-                goTo(car["Pagina Oficial"]);
-              }}
+              href={car["Pagina Oficial"]}
+              target="_blank"
             >
               Quiero saber más!
             </Button>
             <Button
               className="button-data-link"
               type="primary"
-              onClick={(e) => {
-                e.preventDefault();
-                goTo(car["Financiacion credito"]);
-              }}
+              href={car["Financiacion credito"]}
+              target="_blank"
             >
               Quiero ver financiación por Crédito!
             </Button>
             <Button
               className="button-data-link"
               type="primary"
-              onClick={(e) => {
-                e.preventDefault();
-                goTo(car["Plan de Ahorro"]);
-              }}
+              href={car["Plan de Ahorro"]}
+              target="_blank"
             >
               Quiero ver financiación por Plan!
             </Button>
